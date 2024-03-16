@@ -1,0 +1,28 @@
+section:first-child {
+    background-image: url(./../assets/home-bg.svg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+section:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./../assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+div span {
+    color: #fff;
+    padding: 12px 14px;
+
+    border-radius: 0.375rem;
+    background-color: #262626;
+}
