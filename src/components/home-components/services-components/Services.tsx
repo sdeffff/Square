@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 
-import serviceBg from "./../../assets/services.png";
+import serviceBg from "./../../../assets/services.png";
 
 import CardList from "./CardList";
+import SectionHeader from "../../SectionHeader";
 
 import gsap from 'gsap';
 
@@ -33,16 +34,11 @@ const Services = () => {
     // }, []);
 
     return (
-        <section>
-            <div className="relative">
-                <img src={serviceBg} alt="" className="pointer-events-none" loading="lazy" />
-
-                <article className="absolute flex flex-col gap-3 w-[62.25rem] text-[#fff] text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden">
-                    <h1 ref={textRef} className="barlow-semibold text-[2.5rem] leading-10">Our Services</h1>
-
-                    <p className="barlow-light text-[1.2rem]">Transform your brand with our innovative digital solutions that captivate and engage your audience.</p>
-                </article>
-            </div>
+        <section>   
+            <SectionHeader
+                img={serviceBg}
+                title="Our Services"
+                txt="Transform your brand with our innovative digital solutions that captivate and engage your audience."></SectionHeader>
 
             <CardList></CardList>
         </section>

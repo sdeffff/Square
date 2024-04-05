@@ -9,7 +9,7 @@ type Props = {
 
 const NavComponent = (props: Props) => {
     return (
-        <li><Link to={props.page} className="duration-200 ease-in py-4 px-6 rounded-lg focus:bg-grey15">{props.txt}</Link></li>
+        <li><Link to={props.page} className="duration-200 ease-in py-4 px-6 rounded-lg focus:bg-grey15 xl:text-lg md:text-base">{props.txt}</Link></li>
     )
 }
 

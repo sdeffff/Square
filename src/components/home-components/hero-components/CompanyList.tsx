@@ -2,12 +2,12 @@ import React from "react";
 
 import Company from "./Company";
 
-import zapier from "./../../assets/zapier.svg";
-import spotify from "./../../assets/spotify.svg";
-import zoom from "./../..//assets/zoom.svg";
-import slack from "./../../assets/slack.svg";
-import amazon from "./../../assets/amazon.svg";
-import adobe from "./../../assets/adobe.svg";
+import zapier from "./../../../assets/zapier.svg";
+import spotify from "./../../../assets/spotify.svg";
+import zoom from "./../../..//assets/zoom.svg";
+import slack from "./../../../assets/slack.svg";
+import amazon from "./../../../assets/amazon.svg";
+import adobe from "./../../../assets/adobe.svg";
 
 const CompanyList = () => {
     return (

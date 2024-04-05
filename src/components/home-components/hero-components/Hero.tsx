@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 
-import Button from "../Button";
+import Button from "../../Button";
 import Companies from "./Companies";
 
 import gsap from 'gsap';
 
+import "./hero.css";
+
 const Hero = () => {
-
-
     return (
         <>
             <section className='border-x-2 border-grey15 mt-32 pt-28 h-[42.75rem] relative'>
@@ -17,19 +17,21 @@ const Hero = () => {
                             that will Work
                     </article>
 
-                    <div className='flex items-center gap-1 border border-grey15 rounded-md px-8 py-5 text-grey60 text-[1.3rem] backdrop-blur-sm barlow-light'>
+                    <div className='flex items-center gap-1 border border-grey15 rounded-md px-8 py-5 text-grey60 xl:text-[1.3rem] md:text-lg backdrop-blur-sm barlow-light'>
                         For <span>Startups</span>, <span>Enterprise leaders</span>, 
                         <span>Media & Publishers</span> and <span>Social Good</span>
                     </div>
 
                     <div className='flex items-center gap-4 z-10'>
                         <button className="text-[1.05rem] barlow-medium text-white border-2 border-grey15 rounded px-[1.5rem] py-4 my-5 backdrop-blur-sm duration-200 ease-in hover:bg-grey10">Our Works</button>
-                        <Button txt={"Contact Us"}></Button>
+                        <Button 
+                        link="#"
+                        txt={"Contact Us"}></Button>
                     </div>
                 </div>
 
                 <div className='text-[#fff] barlow-regular bg-grey10 py-4 px-8 border rounded-full border-grey15 absolute bottom-[-9%] left-2/4 translate-y-[-50%] translate-x-[-50%]'>
-                    <h1 className='text-[1.15rem]'>Trusted By 250+ Companies</h1>
+                    <h1 className='text-[1.15rem] text-base'>Trusted By 250+ Companies</h1>
                 </div>
             </section>
 

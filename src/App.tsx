@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Home from './pages/Home'
+import Home from './pages/home/Home'
 import NavBar from './components/header-components/NavBar'
 import { Routes, Route } from 'react-router-dom'
 

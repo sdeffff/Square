@@ -1,0 +1,11 @@
+img {
+    pointer-events: none;
+}
+
+div span {
+    color: #fff;
+    padding: 12px 14px;
+
+    border-radius: 0.375rem;
+    background-color: #262626;
+}

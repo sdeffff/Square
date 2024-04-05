@@ -1,0 +1,28 @@
+.info li {
+    background: #2424245c;
+    border: 1px solid #262626;
+    border-radius: 6px;
+
+    color: #fff;
+}
+
+.contacting { 
+    background: #2424245c;
+    border: 1px solid #262626;
+    border-radius: 6px;
+}
+
+.contacting ul li {
+    display: flex;
+    align-items: center;
+
+    gap: 0.7rem;
+
+    font-size: 1.2rem;
+}
+
+.message {
+    background: #2424245c;
+    border: 1px solid #262626;
+    border-radius: 6px;
+}
