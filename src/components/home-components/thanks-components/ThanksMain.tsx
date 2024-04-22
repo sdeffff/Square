@@ -2,14 +2,14 @@ import "./thanks.css"
 
 const ThanksMain = () => {
     return (
-        <section id="startProject" className="thanks-section border-x-2 border-grey15 xl:mx-40 md:mx-16 xl:px-16 md:px-14 xl:py-14">
+        <section className="thanks-section border-x-2 border-grey15 xl:mx-40 md:mx-16 xl:px-16 md:px-14 xl:py-14">
             <form className="text-white flex flex-col gap-10">
                 <ul className="info flex justify-between">
                     <li className="barlow-medium flex flex-col gap-3 py-4 px-7 xl:w-96 md:w-80">
                         <h2 className="text-xl md:text-lg">Full Name</h2>
 
                         <input 
-                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base placeholder-grey30"
+                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
                         type="text" 
                         placeholder="Type Here"
                         min={3}
@@ -21,7 +21,7 @@ const ThanksMain = () => {
                         <h2 className="text-xl md:text-lg">Email</h2>
 
                         <input 
-                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base placeholder-grey30"
+                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
                         type="email"
                         placeholder="Type Here"
                         />
@@ -66,7 +66,7 @@ const ThanksMain = () => {
                     <h2 className="barlow-medium text-2xl leading-normal">Your Message</h2>
 
                     <textarea
-                    className="outline-none border-none placeholder-grey30 bg-[#2424245c] px-2 py-1 barlow-regular"
+                    className="outline-none resize-none border-none duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60 bg-[#2424245c] px-2 py-1 barlow-regular"
                     placeholder="Type Here" 
                     cols={30} 
                     rows={3}

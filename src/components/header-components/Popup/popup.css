@@ -1,0 +1,15 @@
+.popup-wrapper {
+    background-color: rgba(8, 8, 8, 0.55)
+}
+
+input:nth-child(2) {
+    width: 100%;
+}
+
+input, textarea {
+    accent-color: #fff;
+}
+
+input:focus {
+    border-bottom: 2px solid #E6E6E6;
+}

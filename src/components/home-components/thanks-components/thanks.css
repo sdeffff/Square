@@ -25,4 +25,6 @@
     background: #2424245c;
     border: 1px solid #262626;
     border-radius: 6px;
+
+    resize: none;
 }

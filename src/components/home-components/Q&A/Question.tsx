@@ -46,7 +46,7 @@ const Question = (vals: Props) => {
 }
 
     return (
-        <li ref={cardRef} onClick={handleCLick} className="flex gap-7 bg-grey10 border-[0.5px] border-grey15 cursor-pointer h-32 py-6 px-12 overflow-hidden duration-[250ms] ease-in-out">
+        <li ref={cardRef} onClick={handleCLick} className="flex gap-7 bg-grey10 border-[0.5px] border-grey15 cursor-[var(--cursorPointer)] h-32 py-6 px-12 overflow-hidden duration-[250ms] ease-in-out">
             <img src={vals.number} className="w-20 h-20" alt="" />
 
             <article className="flex flex-col">

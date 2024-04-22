@@ -55,6 +55,9 @@ const QuestionList = () => {
                 title="Can you help with website or app maintenance and updates?"
                 txt="SquareUp offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more."
                 ></Question>
+
+            <li className="bg-grey10 border-[0.5px] border-grey15 h-16"></li>
+            <li className="bg-grey10 border-[0.5px] border-grey15 h-16"></li>
         </ul>
     )
 }

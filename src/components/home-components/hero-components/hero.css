@@ -1,11 +1,11 @@
-section:first-child {
+.hero-main:first-child {
     background-image: url(./../../../assets/home-bg.svg);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
 }
 
-section:first-child::before {
+.hero-main:first-child::before {
     content: "";
     position: absolute;
     top: 0;
@@ -18,3 +18,14 @@ section:first-child::before {
     background-repeat: no-repeat;
     opacity: 0.55;
 }
+
+/* .carousel {
+    position: relative;
+    animation: carousel 16s linear infinite;
+}
+
+@keyframes carousel {
+    100% {
+        transform: translateX(-1260px);
+    }
+} */

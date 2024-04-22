@@ -9,9 +9,11 @@ import slack from "./../../../assets/slack.svg";
 import amazon from "./../../../assets/amazon.svg";
 import adobe from "./../../../assets/adobe.svg";
 
+import "./hero.css"
+
 const CompanyList = () => {
     return (
-        <ul className="flex items-center justify-between gap-5">
+        <ul className="carousel flex items-center justify-between gap-5 overflow-hidden">
             <Company src="zapier.com" imgSrc={zapier}></Company>
             <Company src="spotify.com" imgSrc={spotify}></Company>
             <Company src="zoom.com" imgSrc={zoom}></Company>

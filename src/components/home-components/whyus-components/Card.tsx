@@ -1,7 +1,5 @@
 import { useRef } from "react";
 
-import "./whyus.css"
-
 type Props = {
     img: string,
     title: string,

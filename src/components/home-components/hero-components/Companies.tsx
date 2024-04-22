@@ -4,7 +4,7 @@ import CompanyList from "./CompanyList";
 
 const Companies = () => {
     return (
-        <section className="bg-[rgba(36, 36, 36, 0.2)] py-10 border border-grey15">
+        <section className="flex bg-[rgba(36, 36, 36, 0.2)] h-36 border border-grey15 overflow-hidden">
             <CompanyList></CompanyList>
         </section>
     )

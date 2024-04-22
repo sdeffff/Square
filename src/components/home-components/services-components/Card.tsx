@@ -1,7 +1,5 @@
 import { useRef } from "react";
 
-import "./services.css"
-
 type Props = {
     img: string;
     title: string;
@@ -15,15 +13,18 @@ const Card = (props: Props) => {
         const { currentTarget: target } = e;
 
         const rect = target.getBoundingClientRect();
+        //getting the mouse x and y positions
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
+        //giving value of current x and y mouse position to the variable that we are giving to .css
+        //file
         target.style.setProperty("--mouse-x", `${x}px`);
         target.style.setProperty("--mouse-y", `${y}px`);
     };
 
     return (
-        <li onMouseMove={handleOnMouseMove} ref={cardRef} className="card relative flex flex-col justify-between p-12 lg:p-9 md:p-6 bg-grey10 text-white border-[0.5px] border-grey15 w-[26.66rem] h-[35rem] md:h-[32rem]">
+        <li onMouseMove={handleOnMouseMove} ref={cardRef} className="card relative flex flex-col justify-between p-12 lg:p-9 border-x border-grey15 md:p-6 bg-grey10 text-white w-[26.66rem] h-[35rem] md:h-[32rem]">
             <img src={props.img} alt="" className="w-20 h-20 pointer-events-none" loading="lazy" />
 
             <article className="flex flex-col gap-5">
