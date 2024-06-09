@@ -1,5 +1,3 @@
-import React from "react";
-
 import whyUsBg from "./../../../assets/why_us.png";
 import SectionHeader from "../../SectionHeader";
 

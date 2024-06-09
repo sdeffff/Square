@@ -19,13 +19,12 @@
     opacity: 0.55;
 }
 
-/* .carousel {
-    position: relative;
-    animation: carousel 16s linear infinite;
-}
-
-@keyframes carousel {
-    100% {
-        transform: translateX(-1260px);
+@media screen and (max-width: 960px) {
+    .hero-main:first-child {
+        background: none;
     }
-} */
+
+    .hero-main:first-child::before {
+        display: none;
+    }
+}

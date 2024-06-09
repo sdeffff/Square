@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from 'react';
 
 import "./clients.css";
 
@@ -36,4 +36,4 @@ const Client = (vals: Props) => {
     )
 }
 
-export default Client;
+export default memo(Client);

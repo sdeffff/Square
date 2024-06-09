@@ -2,14 +2,14 @@ import "./thanks.css"
 
 const ThanksMain = () => {
     return (
-        <section className="thanks-section border-x-2 border-grey15 xl:mx-40 md:mx-16 xl:px-16 md:px-14 xl:py-14">
-            <form className="text-white flex flex-col gap-10">
+        <section className="thanks-section border-x-2 border-grey15 2xl:mx-32 xl:mx-32 xl:px-16 xl:py-14 lg:py-10 md:py-5 md:mx-16 md:px-14">
+            <form className="text-white flex flex-col gap-10 ">
                 <ul className="info flex justify-between">
-                    <li className="barlow-medium flex flex-col gap-3 py-4 px-7 xl:w-96 md:w-80">
+                    <li className="barlow-medium flex flex-col gap-3 py-4 px-7 2xl:w-96 xl:w-[22rem] md:w-80">
                         <h2 className="text-xl md:text-lg">Full Name</h2>
 
                         <input 
-                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
+                        className="input-name barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
                         type="text" 
                         placeholder="Type Here"
                         min={3}
@@ -17,11 +17,11 @@ const ThanksMain = () => {
                         />
                     </li>
 
-                    <li className="barlow-medium flex flex-col gap-3 py-4 px-9 xl:w-96 md:w-80">
+                    <li className="barlow-medium flex flex-col gap-3 py-4 px-9 2xl:w-96 xl:w-[22rem] md:w-80">
                         <h2 className="text-xl md:text-lg">Email</h2>
 
                         <input 
-                        className="barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
+                        className="input-email barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg md:text-base duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
                         type="email"
                         placeholder="Type Here"
                         />
@@ -29,35 +29,35 @@ const ThanksMain = () => {
                 </ul>
 
                 <div className="contacting flex flex-col gap-8 p-7">
-                    <h2 className="barlow-medium text-2xl leading-normal">Why are you contacting us?</h2>
+                    <h2 className="barlow-medium lg:text-2xl md:text-xl leading-normal">Why are you contacting us?</h2>
 
                     <ul className="barlow-light grid grid-cols-2 gap-y-4">
                         <li>
                             <input 
-                            className="w-6 h-6 outline-none border-none accent-grey15"
+                            className="xl:w-6 xl:h-6 outline-none border-none accent-grey15 md:w-5 md:h-5"
                             type="checkbox" />
-                            <h2>Web Design</h2>
+                            <h2 className="xl:text-xl md:text-lg">Web Design</h2>
                         </li>
                         
                         <li>
                             <input 
-                            className="w-6 h-6 outline-none border-none accent-grey15"
+                            className="xl:w-6 xl:h-6 outline-none border-none accent-grey15 md:w-5 md:h-5"
                             type="checkbox" />
-                            <h2>Collaboration</h2>
+                            <h2 className="xl:text-xl md:text-lg">Collaboration</h2>
                         </li>
                         
                         <li>
                             <input 
-                            className="w-6 h-6 outline-none border-none accent-grey15"
+                            className="xl:w-6 xl:h-6 outline-none border-none accent-grey15 md:w-5 md:h-5"
                             type="checkbox" />
-                            <h2>Mobile App Design</h2>
+                            <h2 className="xl:text-xl md:text-lg">Mobile App Design</h2>
                         </li>
                         
                         <li>
                             <input 
-                            className="w-6 h-6 outline-none border-none accent-grey15"
+                            className="xl:w-6 xl:h-6 outline-none border-none accent-grey15 md:w-5 md:h-5"
                             type="checkbox" />
-                            <h2>Others</h2>
+                            <h2 className="xl:text-xl md:text-lg">Others</h2>
                         </li>
                     </ul>
                 </div>
@@ -67,14 +67,14 @@ const ThanksMain = () => {
 
                     <textarea
                     className="outline-none resize-none border-none duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60 bg-[#2424245c] px-2 py-1 barlow-regular"
-                    placeholder="Type Here" 
+                    placeholder="Type Here" input-name 
                     cols={30} 
                     rows={3}
                     ></textarea>
                 </div>
 
                 <input 
-                className="text-black text-lg barlow-medium py-4 px-9 rounded-md bg-green50 mx-auto cursor-pointer duration-[250ms] ease-in-out hover:bg-green70"
+                className="common-button text-black text-lg barlow-medium py-4 px-9 rounded-md bg-green50 mx-auto cursor-pointer duration-[250ms] ease-in-out hover:bg-green70"
                 type="submit"
                 value={"Submit"} />
             </form>

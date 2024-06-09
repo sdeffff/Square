@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, memo } from "react";
 
 type Props = {
     img: string,
@@ -33,4 +33,4 @@ const Card = (vals: Props) => {
     )
 }
 
-export default Card;
+export default memo(Card);

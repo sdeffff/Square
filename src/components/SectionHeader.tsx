@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 
 type Props = {
     img: string,
@@ -9,61 +9,57 @@ type Props = {
 const SectionHeader: React.FC<Props> = (props) => {
     const txtRef = useRef<HTMLHeadingElement>(null);
 
-    useEffect(() => {
-        const handleText = () => {
-            const text = txtRef.current;
+    const handleText = () => {
+        const text = txtRef.current;
 
-            if (!text) return;
+        if (!text) return;
 
-            const { dataset } = text;
+        const { dataset } = text;
+        if (!dataset || !dataset.value) return;
+
+        let iteration = 0;
+
+        const interval = setInterval(() => {
             if (!dataset || !dataset.value) return;
 
-            let iteration = 0;
+            text.innerText = dataset.value
+                .split("")
+                .map((letter, index) => {   
+                    if (!dataset || !dataset.value) return;
 
-            const interval = setInterval(() => {
-                if (!dataset || !dataset.value) return;
+                    if (index < iteration) {
+                        //if this is true - it means that character in 'index' was revealed in previous 
+                        //iteration and we keep it as original character from data set
+                        return dataset.value[index];
+                    }
+                    //before we find the character we are saying that element is going to be random
+                    //letter from ASCII table (from A-Z uppercased)
+                    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+                })
+                .join(""); //after we find all the original characters - we are joining them
 
-                text.innerText = dataset.value
-                    .split("")
-                    .map((letter, index) => {   
-                        if (!dataset || !dataset.value) return;
-
-                        if (index < iteration) {
-                            return dataset.value[index];
-                        }
-                        return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-                    })
-                    .join("");
-
-                if (iteration >= dataset.value.length) {
-                    clearInterval(interval);
-                }
-
-                iteration += 1;
-            }, 30);
-
-            setTimeout(() => {
+            if (iteration >= dataset.value.length) {
                 clearInterval(interval);
-                text.innerText = dataset.value;
-            }, 1000);
-        }
+            }
 
-        if (txtRef.current) txtRef.current.addEventListener("mouseover", handleText);
+            iteration++;
+        }, 30);
 
-        return () => {
-            if (txtRef.current) txtRef.current?.removeEventListener("mouseover", handleText);
-        };
-    }, []);
+        setTimeout(() => {
+            clearInterval(interval);
+            text.innerText = dataset.value;
+        }, 1000);
+    }
 
     return (
         <div className="relative border-x-2 border-grey15">
             <img src={props.img} className="pointer-events-none h-full" alt="" />
             <article className="absolute flex flex-col gap-3 xl:w-[66rem] md:w-[56rem] text-[#fff] text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden">
-                <h1 ref={txtRef} data-value={props.title} className="barlow-semibold xl:text-[2.5rem] md:text-3xl leading-10">{props.title}</h1>
+                <h1 ref={txtRef} data-value={props.title} onMouseOver={handleText} className="barlow-semibold xl:text-[2.5rem] md:text-3xl leading-10 cursor-[var(--cursorDefault)]">{props.title}</h1>
                 <p className="barlow-light text-[1.1rem]">{props.txt}</p>
             </article>
         </div>
     )
 }
 
-export default SectionHeader;
+export default memo(SectionHeader);

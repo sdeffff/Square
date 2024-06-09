@@ -10,6 +10,7 @@ img {
     background-color: #262626;
 }
 
+/* Cards for why us and service sections */
 .card:hover::before {
     opacity: 1;
   }
@@ -28,7 +29,7 @@ img {
   
   .card::before {
     background: radial-gradient(
-      600px circle at var(--mouse-x) var(--mouse-y), 
+      600px circle at var(--mouse-x) var(--mouse-y), /* variables from js */
       rgba(255, 255, 255, 0.06),
       transparent 40%
     );
@@ -37,7 +38,7 @@ img {
   
   .card::after {  
     background: radial-gradient(
-      400px circle at var(--mouse-x) var(--mouse-y), 
+      400px circle at var(--mouse-x) var(--mouse-y), /* variables from js */
       rgba(255, 255, 255, 0.4),
       transparent 40%
     );

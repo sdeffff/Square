@@ -28,3 +28,8 @@
 
     resize: none;
 }
+
+.input-name:focus,
+.input-email:focus {
+    border-color: #98989A;
+}

@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import Home from './pages/home/Home'
-import Services from './pages/services/Services'
+import { useState } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
-import Preloader from './components/Preloader'
+// Page components:
+import Home from './pages/home/Home';
+import Services from './pages/services/Services';
+import PageNotFound from './pages/PageNotFound';
+import Work from "./pages/works/Works";
+import Process from './pages/process/Process';
+import About from './pages/about/About';
+import Career from './pages/carrer/Career';
 
-import NavBar from './components/header-components/NavBar'
-import Footer from './components/home-components/footer-components/Footer'
-import { Routes, Route } from 'react-router-dom'
+// Elements:
+import NavBar from './components/header-components/NavBar';
+import Footer from './components/footer-components/Footer';
+import Preloader from './components/Preloader';
 
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import "./styles/base.css";
 
 function App() {
+  const location = useLocation();
 
   return (
     <>
-  <Preloader></Preloader>
+      <Preloader />
+      <NavBar />
+      <div className='main-container bg-[#191919] mt-32 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
+        <AnimatePresence mode='wait'>
+          <Routes location={location} key={location.pathname}>
+            <Route path='/' element={<Home />} />
+            <Route path='services' element={<Services />} />
+            <Route path='works' element={<Work />} />
+            <Route path='process' element={<Process />} />
+            <Route path='about' element={<About />} />
+            <Route path='career' element={<Career />} />
 
-  <NavBar></NavBar>
-
-    {/* w-[99.75rem] */}
-    <div className='bg-[#191919] mt-32 2xl:px-32 xl:px-20 md:px-3'>
-        <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='services' element={<Services />}></Route>
-        </Routes>
+            <Route path='/*' element={<PageNotFound />} />
+          </Routes>
+        </AnimatePresence>
       </div>
-
-      <Footer></Footer>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,7 +1,7 @@
+import Button from "../../Button";
+
 import thankBg from "../../../assets/thank-bg.png";
 import thankLogo from "../../../assets/ThankLogo.svg";
-
-import Button from "../../Button";
 
 const ThanksHeader = () => {
     return (

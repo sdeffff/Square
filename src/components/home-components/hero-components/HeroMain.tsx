@@ -1,4 +1,5 @@
 import Button from "../../Button";
+import { Link } from "react-router-dom";
 
 const HeroMain = () => {
     return (
@@ -16,7 +17,7 @@ const HeroMain = () => {
                     </div>
 
                     <div className='flex items-center gap-4 z-10'>
-                        <button className="text-[1.05rem] barlow-medium text-white border-2 border-grey15 rounded px-[1.5rem] py-4 my-5 backdrop-blur-sm duration-200 ease-in hover:bg-grey10">Our Works</button>
+                        <Link to={"works"}><button name="works" className="common-button text-[1.05rem] barlow-medium text-white border-2 border-grey15 rounded px-[1.5rem] py-4 my-5 backdrop-blur-sm duration-200 ease-in hover:bg-grey10"> <p> Our Works </p></button></Link>
                         <Button 
                         link="#start"
                         txt={"Start Project"}></Button>

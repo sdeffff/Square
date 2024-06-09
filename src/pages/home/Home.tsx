@@ -5,23 +5,21 @@ import Clients from '../../components/home-components/clients-components/Clients
 import QA from '../../components/home-components/Q&A/QA';
 import Thanks from '../../components/home-components/thanks-components/Thanks';
 
+import transition from '../transition';
+
 import "./home.css";
+
 const Home = () => {
     return (
-        <>
-            <Hero></Hero>
-
-            <Services></Services>
-
-            <WhyUs></WhyUs>
-
-            <Clients></Clients>
-
-            <QA></QA>
-
-            <Thanks></Thanks>
-        </>
-    )
+        <section>
+            <Hero />
+            <Services />
+            <WhyUs />
+            <Clients />
+            <QA />
+            <Thanks />
+        </section>
+    );
 }
 
-export default Home;
+export default transition(Home);

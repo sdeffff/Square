@@ -1,19 +1,9 @@
-import React from "react";
-
 import Client from "./Client";
 
 import first from "./../../../assets/Profile.png";
 import second from "./../../../assets/Profile (1).png";
 import third from "./../../../assets/Profile (2).png";
 import fourth from "./../../../assets/Profile (3).png";
-
-type Props = {
-    title: string,
-    txt: string,
-    pfp: string,
-    name: string,
-    job: string,
-}
 
 const ClientsGrid = () => {
     return (

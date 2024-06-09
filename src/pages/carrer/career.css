@@ -1,0 +1,11 @@
+.career-card h2 {
+    transition: .25s ease;
+}
+
+.career-card:hover h2 {
+    border-color: #D8FF99;
+}
+
+article:nth-child(1) span {
+    display: none;
+}

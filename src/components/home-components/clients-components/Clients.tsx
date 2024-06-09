@@ -1,5 +1,3 @@
-import React from "react";
-
 import SectionHeader from "../../SectionHeader";
 import ClientsGrid from "./ClientsGrid";
 

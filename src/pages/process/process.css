@@ -1,0 +1,17 @@
+.process-card article p {
+    transition: .3s ease;
+}
+
+.process-card:hover article p {
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.about-list li article p {
+    color: #D8FF99;
+}
+
+.about-list .process-card:hover article p {
+    color: #D8FF99;
+    border-color: #D8FF99;
+}

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, memo } from "react";
 
 type Props = {
     img: string;
@@ -10,7 +10,7 @@ const Card = (props: Props) => {
     const cardRef = useRef<HTMLLIElement>(null);
 
     const handleOnMouseMove = (e: React.MouseEvent<HTMLLIElement>) => {
-        const { currentTarget: target } = e;
+        const { currentTarget: target } = e; //target - this is our white circle on the <li> tag
 
         const rect = target.getBoundingClientRect();
         //getting the mouse x and y positions
@@ -19,6 +19,7 @@ const Card = (props: Props) => {
 
         //giving value of current x and y mouse position to the variable that we are giving to .css
         //file
+        //And setting variables to the white circle
         target.style.setProperty("--mouse-x", `${x}px`);
         target.style.setProperty("--mouse-y", `${y}px`);
     };
@@ -38,4 +39,4 @@ const Card = (props: Props) => {
     )
 }
 
-export default Card;
+export default memo(Card);

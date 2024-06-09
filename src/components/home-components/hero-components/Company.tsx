@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from 'react';
 
 type Props = {
     src: string;
@@ -11,4 +11,4 @@ const Company = (props: Props) => {
     )
 }
 
-export default Company;
+export default memo(Company);

@@ -1,0 +1,35 @@
+.navbar-btn::after {
+    content: "Contact Us";
+    width: 100%;
+    position: absolute;
+    bottom: -6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #000;
+    font-size: 1.05rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .35s ease;
+}
+
+.navbar-btn p {
+    cursor: var(--cursorPointer);
+    transition: .35s ease;
+}
+
+.navbar-btn:hover p {
+    transform: translateY(-10px);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-btn:hover::after {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+
+    opacity: 1;
+    visibility: visible;
+}

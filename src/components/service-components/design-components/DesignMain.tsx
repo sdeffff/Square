@@ -1,9 +1,13 @@
 import DesignServices from "./DesignServices";
 
-import icon1 from "../../../assets/icon1.svg";
-import icon2 from "../../../assets/icon2.svg";
-import icon3 from "../../../assets/icon3.svg";
-import icon4 from "../../../assets/icon4.svg";
+import icon1 from "../../../assets/design-icon1.svg";
+import icon2 from "../../../assets/design-icon2.svg";
+import icon3 from "../../../assets/design-icon3.svg";
+import icon4 from "../../../assets/design-icon4.svg";
+import icon5 from "../../../assets/design-icon5.svg";
+import icon6 from "../../../assets/design-icon6.svg";
+import icon7 from "../../../assets/design-icon7.svg";
+import icon8 from "../../../assets/design-icon8.svg";
 
 const DesignMain = () => {
     return (
@@ -21,9 +25,9 @@ const DesignMain = () => {
 
             <DesignServices
                 title="User Interface (UI) Design"
-                img1={icon1}
+                img1={icon5}
                 txt1="User Research and Persona Development"
-                img2={icon2}
+                img2={icon6}
                 txt2="Information Architecture and Wireframing"
                 img3={icon3}
                 txt3="Interactive Prototyping and User Testing"
@@ -32,9 +36,9 @@ const DesignMain = () => {
 
             <DesignServices
                 title="Branding and Identity"
-                img1={icon1}
+                img1={icon7}
                 txt1="Logo Design and Visual Identity Development"
-                img2={icon2}
+                img2={icon8}
                 txt2="Brand Strategy and Positioning"
                 img3={icon3}
                 txt3="Brand Guidelines and Style Guides"

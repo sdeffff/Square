@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, memo } from "react";
 
 import { IonIcon } from "@ionic/react";
 import {closeOutline} from "ionicons/icons";
@@ -62,4 +62,4 @@ const Question = (vals: Props) => {
     )
 }
 
-export default Question;
+export default memo(Question);
