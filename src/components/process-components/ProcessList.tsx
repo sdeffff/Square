@@ -2,7 +2,7 @@ import SectionCard from "../SectionCard";
 
 const ProcessList = () => {
     return (
-        <ul className="process-list grid grid-cols-2">
+        <ul className="process-list md:grid md:grid-cols-2">
             <SectionCard 
             number="01"
             name="Discovery"

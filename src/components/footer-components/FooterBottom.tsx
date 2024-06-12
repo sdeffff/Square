@@ -66,8 +66,8 @@ const FooterBottom = () => {
     //---
     
     return (
-        <div className="flex justify-between border-t-2 border-grey15 pt-12">
-            <ul className="text-white flex gap-6">
+        <div className="flex justify-between items-center border-t-2 border-grey15 pt-12">
+            <ul className="text-white flex flex-col gap-4 lg:flex-row lg:gap-6">
                 <li className="relative flex items-center gap-2">
                     <img src={email} alt="" className="w-[1.3rem] h-[1.3rem]"/> 
                     <p ref={emailRef} onClick={copyEmail} onMouseEnter={() => setEmailTooltip(true)} onMouseLeave={checkEmailTooltip} className="email relative text-[1.05rem] text-green70 barlow-regular cursor-[var(--cursorPointer)]">hello@squareup.com</p>
@@ -85,7 +85,7 @@ const FooterBottom = () => {
                 <li className="flex items-center gap-2"><img src={location} alt="" className="w-[1.3rem] h-[1.3rem]" /> <a href="https://www.google.com/maps/place/Field+of+Corn/@40.0851707,-83.1247859,634m/data=!3m1!1e3!4m6!3m5!1s0x88389320245f8f81:0x93d0cfc40258fb5c!8m2!3d40.0850272!4d-83.1232409!16s%2Fm%2F02vz81y?entry=ttu" target="_blank" className="cursor-[var(--cursorPointer)] text-base barlow-regular">Somewhere in the World</a></li>
             </ul>
 
-            <p className="xl:text-xl md:text-base barlow-regular text-grey60">© 2023 SquareUp. All rights reserved.</p>
+            <p className="text-base lg:text-xl barlow-regular text-grey60">© 2023 SquareUp. All rights reserved.</p>
         </div>
     )
 }

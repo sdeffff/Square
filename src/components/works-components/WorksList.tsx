@@ -10,7 +10,7 @@ import "../../pages/works/works.css";
 
 const WorksList = () => {
     return (
-        <ul className="works-list grid grid-cols-2 place-items-center border-[0.5px] border-grey15">
+        <ul className="works-list tb:grid tb:grid-cols-2 place-items-center border-[0.5px] border-grey15">
             <WorksCard
             title="E-Commerce Platform for Fashion Hub"
             img={work_1}

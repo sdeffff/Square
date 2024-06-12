@@ -19,20 +19,20 @@ const ServiceFooter = (props: Props) => {
     }
 
     return (
-        <div className="relative">
+        <div className="relative border-x border-grey15">
             <img src={thankBg} alt="" />
 
-            <div className="flex flex-col items-center gap-10 md:gap-7 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <img src={thankLogo} className="xl:w-20 md:w-16 xl:h-20 md:h-16" alt="" />
+            <div className="flex flex-col items-center gap-2 md:gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <img src={thankLogo} className="w-10 h-10 sm:w-16 sm:h-16 md:w-18 md:h-18" alt="" />
 
-                <article className="text-white text-center flex flex-col gap-3 w-[56rem]">
-                    <h1 className="barlow-semibold text-4xl">{props.title}</h1>
+                <article className="text-white text-center flex flex-col w-[56rem]">
+                    <h1 className="barlow-semibold text-xl">{props.title}</h1>
 
-                    <p className="barlow-light">{props.txt}</p>
+                    <p className="barlow-light hidden lg:block">{props.txt}</p>
                 </article>
 
                 <Link to={"/"} onClick={handleScroll}>
-                    <button className="common-button xl:text-[1.05rem] lg:text-base sm:text-sm barlow-medium bg-green50 text-black rounded px-[1.5rem] py-4 my-5 duration-200 ease-in hover:bg-green70"><p>Start Project</p></button>
+                    <button className="common-button text-sm sm:text-base md:text-[1.05rem] barlow-medium bg-green50 text-black rounded px-2 py-3 sm:px-[1.5rem] sm:py-4 duration-200 ease-in hover:bg-green70"><p>Start Project</p></button>
                 </Link>
             </div>
         </div>

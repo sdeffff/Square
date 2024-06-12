@@ -24,7 +24,7 @@ const Works = () => {
             txt="
             We have had the privilege of working with a diverse range of clients and delivering 
             exceptional digital products that drive success."
-            span="Here are ten examples of our notable works:"></SectionTitle>
+            span="Here are five examples of our notable works:"></SectionTitle>
 
             <WorksList />
 

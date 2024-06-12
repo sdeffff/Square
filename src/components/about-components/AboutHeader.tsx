@@ -2,7 +2,7 @@ import about from "../../assets/aboutImg.png";
 
 const AboutHeader = () => {
     return (
-        <div className="flex gap-24 items-center py-24 px-28">
+        <div className="flex flex-col md:flex-row gap-24 items-center py-24 px-16 lg:px-20">
             <article className="flex flex-col gap-5">
                 <h3 className="barlow-semibold text-white text-5xl">About SquareUp</h3>
 
@@ -16,7 +16,7 @@ const AboutHeader = () => {
                 </p>
             </article>
 
-            <img src={about} alt="SquareUp" className="w-[63vw] h-[29vw]"/>
+            <img src={about} alt="SquareUp" className="w-[63vw] md:h-[36vw]"/> {/* h-[29vw]*/}
         </div>
     )
 }

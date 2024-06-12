@@ -4,7 +4,7 @@ import "../../pages/process/process.css"
 
 const AboutList = () => {
     return (
-        <ul className="about-list grid grid-cols-2">
+        <ul className="about-list md:grid md:grid-cols-2">
             <SectionCard
             number="01"
             name="Design"

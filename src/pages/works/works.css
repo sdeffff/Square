@@ -27,9 +27,3 @@
     visibility: visible;
     transform: translate(16px, -10px);
 }
-
-.works-list li:last-child {
-    width: 40rem;
-    grid-column: span 2;
-    justify-self: center;
-}

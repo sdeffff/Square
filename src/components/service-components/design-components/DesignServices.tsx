@@ -19,11 +19,11 @@ type Props = {
 const DesignServices = (props: Props) => {
     return (
         <div className='flex flex-col'>
-            <div className="header flex items-center gap-3 border-t-2 border-b border-x-[1.5px] border-grey15 px-12 py-12 w-full duration-[250ms] ease-in-out">
-                <h1 className="title text-grey60 text-3xl barlow-medium duration-[250ms] ease-in-out">{props.title}</h1>
+            <div className="header flex items-center gap-3 border-t-2 border-b border-x-[1.5px] border-grey15 px-8 py-8 md:px-12 md:py-12 w-full duration-[250ms] ease-in-out">
+                <h1 className="title text-grey60 text-2xl md:text-3xl barlow-medium duration-[250ms] ease-in-out">{props.title}</h1>
             </div>
 
-            <ul className={`flex justify-between service-list overflow-hidden border-t border-grey15`} >
+            <ul className='grid grid-rows-1 grid-cols-2 lg:grid-cols-4 service-list overflow-hidden border-t border-grey15' >
                 <ServiceCard
                     title={props.txt1}
                     img={props.img1}></ServiceCard>
