@@ -6,7 +6,7 @@ import pm from "./../../../assets/Project Management.svg";
 
 const CardList = () => {
     return (
-        <ul className="flex w-full items-center border border-grey15">
+        <ul className="bg:flex w-full items-center border border-grey15">
             <Card img={design}
                     title="Design"
                     txt="At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences."></Card>

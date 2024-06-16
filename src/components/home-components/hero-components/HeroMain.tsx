@@ -24,8 +24,8 @@ const HeroMain = () => {
                     </div>
                 </div>
 
-                <div className='text-[#fff] barlow-regular bg-grey10 py-4 px-8 border rounded-full border-grey15 absolute bottom-[-9%] left-2/4 translate-y-[-50%] translate-x-[-50%]'>
-                    <h1 className='text-[1.15rem] text-base'>Trusted By 250+ Companies</h1>
+                <div className='text-[#fff] barlow-regular bg-grey10 tb:py-4 tb:px-8 py-2 px-6 border rounded-full border-grey15 absolute bottom-[-6%] tb:bottom-[-9%] left-2/4 translate-y-[-50%] translate-x-[-50%]'>
+                    <h1 className='text-[1rem] tb:text-[1.15rem] text-base'>Trusted By 250+ Companies</h1>
                 </div>
         </section>
     )

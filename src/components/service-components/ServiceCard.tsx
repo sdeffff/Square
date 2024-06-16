@@ -23,7 +23,7 @@ const ServiceCard = (props: Props) => {
     };
 
     return (
-        <li ref={cardRef} onMouseMove={handleOnMouseMove} className="service-card w-[49.8vw] md:w-[48.5vw] lg:w-full h-64 bg-grey15">
+        <li ref={cardRef} onMouseMove={handleOnMouseMove} className="service-card w-[49.9vw] md:w-[48.5vw] lg:w-full h-64 bg-grey15">
             <div className="service-card-content p-12 flex flex-col gap-7 bg-grey10">
                 <img src={props.img} className="pointer-events-none w-20 h-20" alt="" /> 
                 <p className="barlow-regular text-white text-[1.05rem]">{props.title}</p>

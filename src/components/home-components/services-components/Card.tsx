@@ -25,11 +25,11 @@ const Card = (props: Props) => {
     };
 
     return (
-        <li onMouseMove={handleOnMouseMove} ref={cardRef} className="card relative flex flex-col justify-between p-12 lg:p-9 border-x border-grey15 md:p-6 bg-grey10 text-white w-[26.66rem] h-[35rem] md:h-[32rem]">
+        <li onMouseMove={handleOnMouseMove} ref={cardRef} className="card relative flex flex-col justify-between xl:p-12 bg:p-9 p-12 border bg:border-x border-grey15 bg-grey10 text-white bg:w-[26.66rem] h-[35rem] md:h-[32rem]">
             <img src={props.img} alt="" className="w-20 h-20 pointer-events-none" loading="lazy" />
 
             <article className="flex flex-col gap-5">
-                <h2 className="barlow-medium xl:text-3xl md:text-2xl">{props.title}</h2>
+                <h2 className="barlow-medium xl:text-3xl text-2xl">{props.title}</h2>
 
                 <p className="barlow-light text-base">{props.txt}</p>
             </article>
