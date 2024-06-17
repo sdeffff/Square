@@ -18,27 +18,22 @@ const SectionHeader: React.FC<Props> = (props) => {
         if (!dataset || !dataset.value) return;
 
         let iteration = 0;
+        const originalValue = dataset.value;
 
         const interval = setInterval(() => {
             if (!dataset || !dataset.value) return;
 
-            text.innerText = dataset.value
+            text.innerText = originalValue
                 .split("")
-                .map((letter, index) => {   
-                    if (!dataset || !dataset.value) return;
-
+                .map((_, index) => {
                     if (index < iteration) {
-                        //if this is true - it means that character in 'index' was revealed in previous 
-                        //iteration and we keep it as original character from data set
-                        return dataset.value[index];
+                        return originalValue[index];
                     }
-                    //before we find the character we are saying that element is going to be random
-                    //letter from ASCII table (from A-Z uppercased)
                     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
                 })
-                .join(""); //after we find all the original characters - we are joining them
+                .join("");
 
-            if (iteration >= dataset.value.length) {
+            if (iteration >= originalValue.length) {
                 clearInterval(interval);
             }
 
@@ -47,7 +42,7 @@ const SectionHeader: React.FC<Props> = (props) => {
 
         setTimeout(() => {
             clearInterval(interval);
-            text.innerText = dataset.value;
+            text.innerText = originalValue;
         }, 1000);
     }
 

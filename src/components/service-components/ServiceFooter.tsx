@@ -1,5 +1,3 @@
-import Button from "../Button";
-
 import { Link } from "react-router-dom";
 
 import thankBg from "../../assets/thank-bg.png";

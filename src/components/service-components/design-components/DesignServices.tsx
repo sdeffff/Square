@@ -1,5 +1,3 @@
-import { useState, useRef } from 'react';
-
 import ServiceCard from "../ServiceCard";
 
 import "./design.css";
