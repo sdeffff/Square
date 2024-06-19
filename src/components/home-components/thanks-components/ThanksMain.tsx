@@ -1,9 +1,16 @@
+import { FormHTMLAttributes, useRef } from 'react';
 import "./thanks.css"
 
 const ThanksMain = () => {
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const handleSubmit = (e:any) => {
+        e.preventDefault();
+    }
+
     return (
         <section className="thanks-section border-x-2 border-grey15 py-4 2xl:mx-32 xl:mx-32 xl:px-16 xl:py-14 lg:py-10 md:py-5 md:mx-16 md:px-14">
-            <form className="text-white flex flex-col gap-10">
+            <form className="text-white flex flex-col gap-10" onClick={handleSubmit} ref={formRef}>
                 <ul className="info flex justify-between">
                     <li className="barlow-medium flex flex-col gap-3 py-4 px-7 2xl:w-96 xl:w-[22rem] md:w-80">
                         <h2 className="text-lg md:text-xl">Full Name</h2>

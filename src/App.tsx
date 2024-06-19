@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 
 // Page components:
-const Home = lazy(() => import("./pages/home/Home"));
+import Home from './pages/home/Home';
 const Services = lazy(() => import("./pages/services/Services"));
 const Work = lazy(() => import("./pages/works/Works"));
 const Process = lazy(() => import('./pages/process/Process'));
@@ -30,7 +30,7 @@ function App() {
       <div className='main-container bg-[#191919] mt-32 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
-            <Route path='/' element={<Suspense fallback="..."><Home /></Suspense>} />
+            <Route path='/' element={<Home />} />
             <Route path='services' element={<Suspense fallback="..."><Services /></Suspense>} />
             <Route path='works' element={<Suspense fallback="..."><Work /></Suspense>} />
             <Route path='process' element={<Suspense fallback="..."><Process /></Suspense>} />

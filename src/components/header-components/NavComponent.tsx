@@ -8,7 +8,7 @@ type Props = {
 const handleScroll = () => {
     setTimeout(() => {
         window.scrollTo(0, 0);
-    }, 320);
+    }, 315);
 }
 
 const NavComponent = (props: Props) => {

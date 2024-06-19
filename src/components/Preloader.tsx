@@ -61,7 +61,7 @@ const Preloader = () => {
             <div className="preloader-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-36">
                 <img ref={imgRef} src={logo} alt="" className="preloader-img scale-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 visible duration-[400ms] ease-in-out" />
            
-                <h1 ref={textRef} className='preloader-text text-4xl text-center text-white barlow-semibold absolute visible tracking-[0.1rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-[350ms] ease-in-out opacity-100'>
+                <h1 ref={textRef} className='preloader-text text-4xl pointer-events-none text-center text-white barlow-semibold absolute visible tracking-[0.1rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-[350ms] ease-in-out opacity-100'>
                     SquareUP
                 </h1>
             </div>

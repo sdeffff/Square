@@ -7,7 +7,7 @@ import RDS from "./../../../assets/RDS.svg";
 
 const CardGrid = () => {
     return (
-        <ul className="grid grid-cols-2 border-[0.5px] border-grey15">
+        <ul className="md:grid md:grid-cols-2 border-[0.5px] border-grey15">
             <Card
                 img={Expertise}
                 title="Expertise"

@@ -1,7 +1,7 @@
 ## My first Big Project that is written on React
 
 
-<p>So I was writing this project for 2 months, and i think this is not really bad as pet project for Junior Front-end Developer. I tried to make my best :)</p>
+<p>So I was writing this project for 2 months, and i think this is not really bad as pet project for Junior Front-end Developer. I tried to make my best :)</p> 
 
 **Technologies that are used in the project:**
 <details>

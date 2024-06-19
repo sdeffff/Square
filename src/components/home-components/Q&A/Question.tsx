@@ -3,6 +3,8 @@ import { useState, useRef, memo } from "react";
 import { IonIcon } from "@ionic/react";
 import {closeOutline} from "ionicons/icons";
 
+import "./qa.css"
+
 type Props = {
     number: string,
     title: string,
@@ -46,16 +48,18 @@ const Question = (vals: Props) => {
 }
 
     return (
-        <li ref={cardRef} onClick={handleCLick} className="flex gap-7 bg-grey10 border-[0.5px] border-grey15 cursor-[var(--cursorPointer)] h-32 py-6 px-12 overflow-hidden duration-[250ms] ease-in-out">
-            <img src={vals.number} className="w-20 h-20" alt="" />
+        <li ref={cardRef} onClick={handleCLick} className="qa-card flex flex-col gap-7 bg-grey10 border-[0.5px] border-grey15 cursor-[var(--cursorPointer)] h-32 px-6 py-6 xl:px-20 overflow-hidden duration-[250ms] ease-in-out">
+            <div className="flex items-center justify-center gap-10 w-full">
+                <img src={vals.number} className="w-20 h-20" alt="" />
 
-            <article className="flex flex-col">
-                <div className="flex items-center justify-between py-6">
-                    <h1 ref={titleRef} className="barlow-medium text-white text-[1.1rem] duration-[250ms] ease-in-out">{vals.title}</h1>
+                <div className="flex items-center gap-16 justify-between">
+                    <h1 ref={titleRef} className="barlow-medium text-white text-base md:text-[1.05rem] bg:text-[1.1rem] duration-[250ms] ease-in-out cursor-[var(--cursor)] max-w-96 w-full">{vals.title}</h1>
 
                     <IonIcon ref={crossRef} icon={closeOutline} className="text-white cursor-pointer w-7 h-7 rotate-45 duration-[250ms] ease-in-out"></IonIcon>
                 </div>
+            </div>
 
+            <article className="flex flex-col">
                 <p ref={textRef} className="text-white barlow-light invisible">{vals.txt}</p>
             </article>
         </li>

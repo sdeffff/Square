@@ -11,7 +11,7 @@ import eight from "./../../../assets/eight.svg";
 
 const QuestionList = () => {
     return (
-        <ul className="grid grid-cols-2 bg-grey10 border-[0.5px] border-grey15">
+        <ul className="bg:grid bg:grid-cols-2 bg-grey10 border-[0.5px] border-grey15">
             <li className="bg-grey10 border-[0.5px] border-grey15 h-16"></li>
             <li className="bg-grey10 border-[0.5px] border-grey15 h-16"></li>
 

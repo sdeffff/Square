@@ -50,7 +50,7 @@ const NavBar = () => {
 
                 <button 
                 name="contact"
-                className="common-button relative xl:text-[1.05rem] md:text-base sm:text-sm barlow-medium bg-green50 text-black rounded px-[1.5rem] py-4 my-5 duration-200 ease-in hover:bg-green70"><p>Contact Us</p></button>
+                className="common-button relative xl:text-[1.05rem] md:text-base text-sm barlow-medium bg-green50 text-black rounded px-[1.5rem] py-4 my-5 duration-200 ease-in hover:bg-green70"><p>Contact Us</p></button>
             </header>
         </>
     )

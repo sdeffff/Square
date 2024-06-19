@@ -1,0 +1,33 @@
+.qa-card:nth-child(4) {
+    display: none;
+}
+
+.qa-card:nth-child(6) {
+    display: none;
+}
+
+.qa-card:nth-child(8) {
+    display: none;
+}
+
+.qa-card:nth-child(10) {
+    display: none;
+}
+
+@media screen and (min-width: 964px) {
+    .qa-card:nth-child(4) {
+        display: flex;
+    }
+    
+    .qa-card:nth-child(6) {
+        display: flex;
+    }
+    
+    .qa-card:nth-child(8) {
+        display: flex;
+    }
+    
+    .qa-card:nth-child(10) {
+        display: flex;
+    }
+}

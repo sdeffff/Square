@@ -12,7 +12,7 @@ type Props = {
 
 const Client = (vals: Props) => {  
     return(
-        <li className="client-el flex flex-col justify-between items-start gap-10 py-24 md:py-16 px-16 md:px-8 bg-grey10 border-[0.5px] border-grey15">
+        <li className="client-el flex flex-col justify-between items-start gap-10 lg:px-12 py-16 px-8 bg-grey10 border-[0.5px] border-grey15">
             <article className="flex flex-col gap-6 items-start">
                 <h1 className="barlow-medium xl:text-[1.3rem] md:text-lg leading-7 text-green80 duration-[250ms] ease-in-out">{vals.title}</h1>
 

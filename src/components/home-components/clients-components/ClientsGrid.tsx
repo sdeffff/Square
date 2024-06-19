@@ -7,7 +7,7 @@ import fourth from "./../../../assets/Profile (3).png";
 
 const ClientsGrid = () => {
     return (
-        <ul className="grid grid-cols-2 border-[0.5px] border-grey15">
+        <ul className="md:grid md:grid-cols-2 border-[0.5px] border-grey15">
             <Client
                 pfp={first}
                 title="SquareUp has been Instrumental in Transforming our Online Presence."

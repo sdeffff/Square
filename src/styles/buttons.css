@@ -11,12 +11,24 @@
     left: 50%;
     transform: translate(-50%, 0);
     color: #000;
-    font-size: 1.05rem;
+    font-size: 0.875rem;
 
     opacity: 0;
     visibility: hidden;
 
     transition: .35s ease;
+}
+
+@media screen and (min-width: 1024px) {
+    .common-button::after {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .common-button::after {
+        font-size: 1.05rem;
+    }
 }
 
 .common-button[name="works"]::after {
