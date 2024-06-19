@@ -1,4 +1,4 @@
-import{j as e,t as r,S as n,c as s,T as o}from"./index-BfRtC4_h.js";import{S as a}from"./SectionTitle-BhVgmEx_.js";import{S as t}from"./SectionCard-DM77GDU4.js";import{S as i}from"./ServiceFooter-DdapnZBy.js";const c=()=>e.jsxs("ul",{className:"process-list md:grid md:grid-cols-2",children:[e.jsx(t,{number:"01",name:"Discovery",txt:`\r
+import{j as e,t as r,S as n,c as s,T as o}from"./index-BJ9jOELs.js";import{S as a}from"./SectionTitle-BYbfeHpV.js";import{S as t}from"./SectionCard-uH7MahmB.js";import{S as i}from"./ServiceFooter-0ykWJCHQ.js";const c=()=>e.jsxs("ul",{className:"process-list md:grid md:grid-cols-2",children:[e.jsx(t,{number:"01",name:"Discovery",txt:`\r
             We begin by thoroughly understanding your business goals, \r
             target audience, and project requirements. We conduct in-depth \r
             research to gather insights and define project objectives, allowing \r
