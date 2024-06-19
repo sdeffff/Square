@@ -1,4 +1,4 @@
-import { FormHTMLAttributes, useRef } from 'react';
+import { useRef } from 'react';
 import "./thanks.css"
 
 const ThanksMain = () => {
