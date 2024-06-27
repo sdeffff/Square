@@ -11,25 +11,19 @@ const NavBar = () => {
     const headerRef = useRef<HTMLElement>(null);
 
     //decreasing height of navbar when scrolling
-    useEffect(() => {
-        const handleScroll = () => {
-            const header = headerRef.current;
+    const handleScroll = () => {
+        const header = headerRef.current;
 
-            if(header) {
-                if(window.scrollY >= 20) header.className = header.className.replace("py-4", "py-1");
-                else header.className = header.className.replace("py-1", "py-4");
-            }
+        if(header) {
+            if(window.scrollY >= 20) header.className = header.className.replace("py-4", "py-2");
+            else header.className = header.className.replace("py-2", "py-4");
         }
+    }
 
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }
-    }, []);
+    window.addEventListener("scroll", handleScroll);
 
     //Setting position of window of the page by clicking on the logo
-    const handleScroll = () => {
+    const handleWindow = () => {
         setTimeout(() => {
             window.scrollTo(0, 0);
         }, 140);
@@ -38,7 +32,7 @@ const NavBar = () => {
     return (
         <>
             <header ref={headerRef} className="fixed z-40 w-full top-0 bg-[#191919] text-white flex justify-between items-center border-b-2 border-[#262626] 2xl:px-32 xl:px-20 md:px-3 sm:px-4 py-4 duration-[250ms]">
-                <Link to="/" onClick={handleScroll}>
+                <Link to="/" onClick={handleWindow}>
                     <a href="#" className="flex items-center justify-center gap-3 text-[1.5rem] font-bold">
                         <img src={logoImg} alt="" loading="lazy" />
 
@@ -48,9 +42,10 @@ const NavBar = () => {
 
                 <Navigation></Navigation>
 
+
                 <button 
                 name="contact"
-                className="common-button relative xl:text-[1.05rem] md:text-base text-sm barlow-medium bg-green50 text-black rounded px-[1.5rem] py-4 my-5 duration-200 ease-in hover:bg-green70"><p>Contact Us</p></button>
+                className="common-button relative xl:text-[1.05rem] tb:text-base text-sm lg:block hidden barlow-medium bg-green50 text-black rounded px-[1.5rem] py-4 duration-200 ease-in hover:bg-green70"><p>Contact Us</p></button>
             </header>
         </>
     )

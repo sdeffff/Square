@@ -57,7 +57,7 @@ const Preloader = () => {
     })
 
     return (
-        <div ref={containerRef} className="fixed visible top-0 left-0 h-full w-full bg-[#0f0f0f] z-50 duration-[650ms] ease-in-out">
+        <div ref={containerRef} className="fixed visible top-0 left-0 h-full w-full bg-[#0f0f0f] z-[60] duration-[650ms] ease-in-out">
             <div className="preloader-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-36">
                 <img ref={imgRef} src={logo} alt="" className="preloader-img scale-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 visible duration-[400ms] ease-in-out" />
            

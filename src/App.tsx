@@ -16,6 +16,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 // Elements:
 import NavBar from './components/header-components/NavBar';
 import Footer from './components/footer-components/Footer';
+import MobileFooter from './components/mobile/MobileFooter';
 import Preloader from './components/Preloader';
 
 import "./styles/base.css";
@@ -27,7 +28,7 @@ function App() {
     <>
       <Preloader />
       <NavBar />
-      <div className='main-container bg-[#191919] mt-32 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
+      <div className='main-container bg-[#191919] mt-20 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
             <Route path='/' element={<Home />} />
@@ -42,6 +43,7 @@ function App() {
         </AnimatePresence>
       </div>
       <Footer />
+      <MobileFooter></MobileFooter>
     </>
   );
 }
