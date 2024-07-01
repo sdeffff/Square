@@ -5,10 +5,16 @@ type Props = {
     page: string,
 }
 
+const handleScroll = () => {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 250)
+}
+
 const MobileFooterEl = (props: Props) => {
     return (
         <li className="duration-[250ms] ease-in">
-            <Link to={props.page}><img src={props.icon} alt="" className="w-7 h-7" /></Link>
+            <Link onClick={handleScroll} to={props.page}><img src={props.icon} alt="" className="w-7 h-7" /></Link>
         </li>
     )
 }

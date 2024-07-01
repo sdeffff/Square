@@ -2,7 +2,7 @@ import CareerCard from "./CareerCard"
 
 const CareerList = () => {
     return (
-        <ul className="grid grid-cols-2">
+        <ul className="grid grid-cols-1 tb:grid-cols-2">
             <CareerCard
             title="Innovative and Impactful Projects"
             txt="At SquareUp, you'll have the opportunity to work on exciting and impactful 

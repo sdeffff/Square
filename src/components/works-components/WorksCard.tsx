@@ -12,7 +12,7 @@ type Props = {
 
 const WorksCard = (props: Props) => {
     return (
-        <li className="border-x-[0.5px] border-t-[0.5px] border-grey15 px-5 xl:px-12 pb-24 h-[48rem] border-b-[0.5px] ">
+        <li className="border-x-[0.5px] border-t-[0.5px] border-grey15 px-5 xl:px-12 pb-14 lg:h-[45rem] tb:h-[43rem] border-b-[0.5px] ">
             <h1 className="text-grey60 text-[1.22rem] md:text-[1.15rem] lg:text-[1.17rem] xl:text-[1.35rem] barlow-medium py-5 md:py-7">{props.title}</h1>
 
             <div className="flex flex-col gap-7 pt-8">

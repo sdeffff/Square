@@ -34,7 +34,7 @@ const JobList: React.FC<Props> = ({
                 <h1 className="title text-grey60 text-3xl barlow-medium duration-[250ms] ease-in-out">{title}</h1>
             </div>
 
-            <div className="flex items-center">
+            <div className="bg:flex bg:items-center">
                 <Card1 {...card1Props} />
                 <Card2 {...card2Props} />
                 <Card3 {...card3Props} />

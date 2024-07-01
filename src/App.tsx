@@ -8,7 +8,7 @@ import { lazy, Suspense } from 'react';
 import Home from './pages/home/Home';
 const Services = lazy(() => import("./pages/services/Services"));
 const Work = lazy(() => import("./pages/works/Works"));
-const Process = lazy(() => import('./pages/process/Process'));
+import Process from "./pages/process/Process";
 const About = lazy(() => import('./pages/about/About'));
 const Career = lazy(() => import('./pages/carrer/Career'));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
@@ -34,7 +34,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='services' element={<Suspense fallback="..."><Services /></Suspense>} />
             <Route path='works' element={<Suspense fallback="..."><Work /></Suspense>} />
-            <Route path='process' element={<Suspense fallback="..."><Process /></Suspense>} />
+            <Route path='process' element={<Process />} />
             <Route path='about' element={<Suspense fallback="..."><About /></Suspense>} />
             <Route path='career' element={<Suspense fallback="..."><Career /></Suspense>} />
 
@@ -43,7 +43,7 @@ function App() {
         </AnimatePresence>
       </div>
       <Footer />
-      <MobileFooter></MobileFooter>
+      <MobileFooter />
     </>
   );
 }
