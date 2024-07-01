@@ -31,12 +31,12 @@ function App() {
       <div className='main-container bg-[#191919] mt-20 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
-            <Route path='/' element={<Home />} />
-            <Route path='services' element={<Suspense fallback="..."><Services /></Suspense>} />
-            <Route path='works' element={<Suspense fallback="..."><Work /></Suspense>} />
-            <Route path='process' element={<Process />} />
-            <Route path='about' element={<Suspense fallback="..."><About /></Suspense>} />
-            <Route path='career' element={<Suspense fallback="..."><Career /></Suspense>} />
+            <Route path='Square/' element={<Home />} />
+            <Route path='Square/services' element={<Suspense fallback="..."><Services /></Suspense>} />
+            <Route path='Square/works' element={<Suspense fallback="..."><Work /></Suspense>} />
+            <Route path='Square/process' element={<Process />} />
+            <Route path='Square/about' element={<Suspense fallback="..."><About /></Suspense>} />
+            <Route path='Square/career' element={<Suspense fallback="..."><Career /></Suspense>} />
 
             <Route path='/*' element={<PageNotFound />} />
           </Routes>

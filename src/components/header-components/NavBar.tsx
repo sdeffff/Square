@@ -1,4 +1,4 @@
-import { useEffect, useRef, memo } from "react";
+import { useRef, memo } from "react";
 import Navigation from "./Navigation";
 
 import { Link } from "react-router-dom";
