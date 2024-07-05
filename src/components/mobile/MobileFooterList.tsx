@@ -12,22 +12,22 @@ const MobileFooterList = () => {
         <ul className="flex w-full justify-evenly items-center">
             <MobileFooterEl
             icon={homeIcon}
-            page="/"></MobileFooterEl>
+            page="/Square/"></MobileFooterEl>
             <MobileFooterEl
             icon={serviceIcon}
-            page="/services"></MobileFooterEl>
+            page="/Square/services"></MobileFooterEl>
             <MobileFooterEl
             icon={workIcon}
-            page="/works"></MobileFooterEl>
+            page="/Square/works"></MobileFooterEl>
             <MobileFooterEl
             icon={processIcon}
-            page="/process"></MobileFooterEl>
+            page="/Square/process"></MobileFooterEl>
             <MobileFooterEl
             icon={aboutIcon}
-            page="/about"></MobileFooterEl>
+            page="/Square/about"></MobileFooterEl>
             <MobileFooterEl
             icon={careerIcon}
-            page="/career"></MobileFooterEl>
+            page="/Square/career"></MobileFooterEl>
         </ul>
     )
 }
