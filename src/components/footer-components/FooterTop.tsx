@@ -4,7 +4,7 @@ import logo from "../../assets/logo.svg";
 
 const FooterTop = () => {
     return (
-        <div className="flex justify-between w-full pb-12">
+        <div className="flex flex-col items-start gap-10 md:flex-row justify-between w-full pb-12">
             <a href="#" className="flex items-center gap-2">
                 <img src={logo} alt="" className="w-10 h-10 sm:w-[70px] sm:h-[70px]" />
 

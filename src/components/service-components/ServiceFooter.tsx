@@ -29,7 +29,7 @@ const ServiceFooter = (props: Props) => {
                     <p className="barlow-light hidden lg:block">{props.txt}</p>
                 </article>
 
-                <Link to={"/"} onClick={handleScroll}>
+                <Link to={"/Square/"} onClick={handleScroll}>
                     <button className="common-button text-sm sm:text-base md:text-[1.05rem] barlow-medium bg-green50 text-black rounded px-2 py-3 sm:px-[1.5rem] sm:py-4 duration-200 ease-in hover:bg-green70"><p>Start Project</p></button>
                 </Link>
             </div>

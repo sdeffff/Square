@@ -11,7 +11,7 @@ const HeroMain = () => {
                             </p>
                     </article>
 
-                    <div className='for flex items-center gap-1 border border-grey15 rounded-md px-8 py-5 text-grey60 xl:text-[1.3rem] md:text-lg backdrop-blur-sm barlow-light'>
+                    <div className='for hidden sm:flex items-center gap-1 border border-grey15 rounded-md px-8 py-5 text-grey60 xl:text-[1.3rem] md:text-lg backdrop-blur-sm barlow-light'>
                         For <span>Startups</span>, <span>Enterprise leaders</span>, 
                         <span>Media & Publishers</span> and <span>Social Good</span>
                     </div>
