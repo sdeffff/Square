@@ -10,9 +10,9 @@ const Services = () => {
             <SectionHeader
                 img={serviceBg}
                 title="Our Services"
-                txt="Transform your brand with our innovative digital solutions that captivate and engage your audience."></SectionHeader>
+                txt="Transform your brand with our innovative digital solutions that captivate and engage your audience." />
 
-            <CardList></CardList>
+            <CardList />
         </section>
     )
 }

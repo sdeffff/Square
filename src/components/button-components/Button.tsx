@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import "../styles/buttons.css";
+import "./buttons.css";
 
 type Props = {
     txt: string,

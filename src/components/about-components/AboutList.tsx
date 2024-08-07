@@ -1,6 +1,6 @@
 import SectionCard from "../SectionCard";
 
-import "../../pages/process/process.css"
+import "../../pages/Process/process.css"
 
 const AboutList = () => {
     return (

@@ -6,7 +6,7 @@ import ProcessList from "../../components/process-components/ProcessList";
 import ThanksMain from "../../components/home-components/thanks-components/ThanksMain";
 import ServiceFooter from "../../components/service-components/ServiceFooter";
 
-import processBg from "../../assets/question-bg.png";
+import processBg from "../../assets/question-bg.webp";
 
 import "../../components/home-components/thanks-components/thanks.css";
 

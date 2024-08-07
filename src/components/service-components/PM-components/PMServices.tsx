@@ -24,19 +24,19 @@ const DesignServices = (props: Props) => {
             <ul className='grid grid-rows-1 grid-cols-2 lg:grid-cols-4 service-list overflow-hidden border-t border-grey15' >
                 <ServiceCard
                     title={props.txt1}
-                    img={props.img1}></ServiceCard>
+                    img={props.img1} />
 
                 <ServiceCard
                     title={props.txt2}
-                    img={props.img2}></ServiceCard>
+                    img={props.img2} />
 
                 <ServiceCard
                     title={props.txt3}
-                    img={props.img3}></ServiceCard>
+                    img={props.img3} />
 
                 <ServiceCard
                     title={props.txt4}
-                    img={props.img4}></ServiceCard>
+                    img={props.img4} />
             </ul>
         </div>
     )

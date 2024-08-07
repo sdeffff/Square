@@ -23,7 +23,7 @@ const DesignMain = () => {
                 img3={pmIcon3}
                 txt3="Resource Allocation and Task Assignment"
                 img4={pmIcon4}
-                txt4="Risk Assessment and Mitigation Strategies"></PMServices>
+                txt4="Risk Assessment and Mitigation Strategies" />
 
             <PMServices
                 title="Agile Development"
@@ -34,7 +34,7 @@ const DesignMain = () => {
                 img3={icon3}
                 txt3="Regular Progress Updates and Demos"
                 img4={icon4}
-                txt4="Continuous Improvement and Feedback Incorporation"></PMServices>
+                txt4="Continuous Improvement and Feedback Incorporation" />
 
             <PMServices
                 title="Quality Assurance and Testing"
@@ -45,7 +45,7 @@ const DesignMain = () => {
                 img3={icon3}
                 txt3="Performance and Security Testing"
                 img4={icon4}
-                txt4="Bug Tracking and Issue Resolution"></PMServices>
+                txt4="Bug Tracking and Issue Resolution" />
         </section>
     )
 }

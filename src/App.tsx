@@ -5,19 +5,19 @@ import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
 
 // Page components:
-import Home from './pages/home/Home';
-const Services = lazy(() => import("./pages/services/Services"));
-const Work = lazy(() => import("./pages/works/Works"));
-import Process from "./pages/process/Process";
-const About = lazy(() => import('./pages/about/About'));
-const Career = lazy(() => import('./pages/carrer/Career'));
+import Home from './pages/Home/Home';
+const Services = lazy(() => import("./pages/Services/Services"));
+const Work = lazy(() => import("./pages/Works/Works"));
+import Process from "./pages/Process/Process";
+const About = lazy(() => import('./pages/About/About'));
+const Career = lazy(() => import('./pages/Carrer/Career'));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 // Elements:
 import NavBar from './components/header-components/NavBar';
 import Footer from './components/footer-components/Footer';
 import MobileFooter from './components/mobile/MobileFooter';
-import Preloader from './components/Preloader';
+import Preloader from './components/preloader-components/Preloader';
 
 import "./styles/base.css";
 

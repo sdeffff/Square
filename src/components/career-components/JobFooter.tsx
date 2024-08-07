@@ -1,6 +1,6 @@
 import logo from "../../assets/ThankLogo.svg";
 
-import Button from "../Button";
+import Button from "../button-components/Button";
 
 const JobFooter = () => {
     return (

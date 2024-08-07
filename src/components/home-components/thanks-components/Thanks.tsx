@@ -6,7 +6,7 @@ const Thanks = () => {
         <section id="start" className="border-x-2 border-grey15">
             <ThanksHeader />
 
-            <ThanksMain></ThanksMain>
+            <ThanksMain />
         </section>
     )
 }

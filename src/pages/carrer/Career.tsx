@@ -7,9 +7,9 @@ import CareerList from "../../components/career-components/CareerList";
 import JobMain from "../../components/career-components/JobMain";
 import JobFooter from "../../components/career-components/JobFooter";
 
-import careerBg from "../../assets/question-bg.png"
+import careerBg from "../../assets/question-bg.webp"
 
-import "../../pages/carrer/career.css";
+import "./career.css";
 
 const Career = () => {
     return (
@@ -27,7 +27,7 @@ const Career = () => {
             contribute to cutting-edge projects, we invite you to explore career opportunities with us."
             span="Why Work at SquareUp?"/>
 
-            <CareerList></CareerList>
+            <CareerList />
 
             <SectionTitle 
             heading="Current Openings"

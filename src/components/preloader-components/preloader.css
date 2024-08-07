@@ -1,0 +1,50 @@
+.preloader-txt {
+    animation: expandTxt 350ms 550ms ease forwards, narrowTxt 350ms 800ms ease forwards;;
+
+    transition: .35s ease;
+    opacity: 1;
+}
+
+.preloader-img {
+    animation: scaleImg 400ms 1000ms ease forwards;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: .4s ease;
+}
+
+@keyframes expandTxt {
+    0% {
+        opacity: 1;
+        letter-spacing: 0.1rem;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 0.25rem;
+    }
+}
+
+@keyframes narrowTxt {
+    0% {
+        opacity: 1;
+        letter-spacing: 0.25rem;
+    }
+    99% {
+        opacity: 1;
+        letter-spacing: -0.05rem;
+    }
+    100% {
+        letter-spacing: -0.05rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes scaleImg {
+    0% {
+        transform: scale(0);
+    }
+    
+    100% {
+        transform: scale(100%);
+    }
+}

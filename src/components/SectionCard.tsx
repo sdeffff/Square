@@ -4,7 +4,7 @@ type Props = {
     txt: string
 }
 
-import "../pages/process/process.css";
+import "../pages/Process/process.css";
 
 const SectionCard = (props: Props) => {
     return (

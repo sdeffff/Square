@@ -3,7 +3,7 @@ import SectionTitle from "../../components/SectionTitle";
 import WorksList from "../../components/works-components/WorksList";
 import WorksFooter from "../../components/service-components/ServiceFooter";
 
-import worksBg from "../../assets/why_us.png";
+import worksBg from "../../assets/why_us.webp";
 
 import transition from "../transition";
 
@@ -17,14 +17,14 @@ const Works = () => {
             txt="
             Discover a portfolio of visually stunning and strategically crafted 
             digital projects that showcase our creativity and expertise."
-            img={worksBg}></SectionHeader>
+            img={worksBg} />
 
             <SectionTitle
             heading="At SquareUp"
             txt="
             We have had the privilege of working with a diverse range of clients and delivering 
             exceptional digital products that drive success."
-            span="Here are five examples of our notable works:"></SectionTitle>
+            span="Here are five examples of our notable works:" />
 
             <WorksList />
 
@@ -33,7 +33,7 @@ const Works = () => {
             txt="
             No matter which services you choose, we are committed to delivering exceptional 
             results that exceed your expectations. Our multidisciplinary team works closely 
-            together to ensure seamless collaboration and a unified vision for your digital product."></WorksFooter>
+            together to ensure seamless collaboration and a unified vision for your digital product." />
         </section>
     )
 }

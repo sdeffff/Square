@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 import { Link } from "react-router-dom";
 
-import "../../styles/buttons.css";
+import "../button-components/buttons.css";
 
 import logoImg from "./../../assets/logo.svg";
 
@@ -40,8 +40,7 @@ const NavBar = () => {
                     </a>
                 </Link>
 
-                <Navigation></Navigation>
-
+                <Navigation />
 
                 <button 
                 name="contact"

@@ -1,4 +1,4 @@
-import Button from "../../Button";
+import Button from "../../button-components/Button";
 import { Link } from "react-router-dom";
 
 const HeroMain = () => {
@@ -20,7 +20,7 @@ const HeroMain = () => {
                         <Link to={"/Square/works"}><button name="works" className="common-button text-[1.05rem] barlow-medium text-white border-2 border-grey15 rounded px-[1.5rem] py-4 my-5 backdrop-blur-sm duration-200 ease-in hover:bg-grey10"> <p> Our Works </p></button></Link>
                         <Button 
                         link="#start"
-                        txt={"Start Project"}></Button>
+                        txt={"Start Project"} />
                     </div>
                 </div>
 

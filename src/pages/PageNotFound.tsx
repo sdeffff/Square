@@ -1,5 +1,5 @@
 import transition from "./transition";
-import nullImg from "../assets/nothing.png";
+import nullImg from "../assets/nothing.webp";
 
 const PageNotFound = () => {
     return (

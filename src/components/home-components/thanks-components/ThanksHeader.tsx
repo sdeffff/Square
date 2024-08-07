@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react"
 
-import Button from "../../Button";
+import Button from "../../button-components/Button";
 
-import thankBg from "../../../assets/thank-bg.png";
-import thankBgSmall from "../../../assets/thank-bg-small.png";
+import thankBg from "../../../assets/thank-bg.webp";
+import thankBgSmall from "../../../assets/thank-bg-small.webp";
 import thankLogo from "../../../assets/ThankLogo.svg";
 
 const ThanksHeader = () => {
@@ -36,7 +36,7 @@ const ThanksHeader = () => {
 
                 <Button 
                 link="#"
-                txt = "Start Project"></Button>
+                txt = "Start Project" />
             </div>
         </div>
     )

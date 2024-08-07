@@ -12,12 +12,12 @@ import "./hero.css"
 const CompanyList = () => {
     return (
         <ul className="grid grid-cols-2 carousel tb:flex items-center justify-between gap-5 overflow-hidden">
-            <Company src="zapier.com" imgSrc={zapier}></Company>
-            <Company src="spotify.com" imgSrc={spotify}></Company>
-            <Company src="zoom.com" imgSrc={zoom}></Company>
-            <Company src="slack.com" imgSrc={slack}></Company>
-            <Company src="amazon.com" imgSrc={amazon}></Company>
-            <Company src="adobe.com" imgSrc={adobe}></Company>
+            <Company src="zapier.com" imgSrc={zapier} />
+            <Company src="spotify.com" imgSrc={spotify} />
+            <Company src="zoom.com" imgSrc={zoom} />
+            <Company src="slack.com" imgSrc={slack} />
+            <Company src="amazon.com" imgSrc={amazon} />
+            <Company src="adobe.com" imgSrc={adobe} />
         </ul>
     )
 }

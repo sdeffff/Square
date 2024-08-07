@@ -1,4 +1,4 @@
-import about from "../../assets/aboutImg.png";
+import about from "../../assets/aboutImg.webp";
 
 const AboutHeader = () => {
     return (

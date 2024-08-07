@@ -1,6 +1,7 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import thankBg from "../../assets/thank-bg.png";
+import thankBg from "../../assets/thank-bg.webp";
 import thankLogo from "../../assets/ThankLogo.svg";
 
 type Props = {
@@ -9,12 +10,21 @@ type Props = {
 }
 
 const ServiceFooter = (props: Props) => {
-    //When the Link is clicked set window.scrollY to the Thanks section on main page
+    const timeoutRef = useRef<number | null>(null);
+
+    useEffect(() => {
+        return () => {
+            if(timeoutRef.current) clearTimeout(timeoutRef.current);
+        }
+    }, [])
+
     const handleScroll = () => {
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
             window.scrollTo(0, 4550);
         }, 750)
     }
+
+    //When the Link is clicked set window.scrollY to the Thanks section on main page
 
     return (
         <div className="relative border-x border-grey15">

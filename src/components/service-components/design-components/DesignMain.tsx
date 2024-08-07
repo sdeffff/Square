@@ -21,7 +21,7 @@ const DesignMain = () => {
                 img3={icon3}
                 txt3="Interactive Prototyping and User Testing"
                 img4={icon4}
-                txt4="UI Design and Visual Branding"></DesignServices>
+                txt4="UI Design and Visual Branding" />
 
             <DesignServices
                 title="User Interface (UI) Design"
@@ -32,7 +32,7 @@ const DesignMain = () => {
                 img3={icon3}
                 txt3="Interactive Prototyping and User Testing"
                 img4={icon4}
-                txt4="UI Design and Visual Branding"></DesignServices>
+                txt4="UI Design and Visual Branding" />
 
             <DesignServices
                 title="Branding and Identity"
@@ -43,7 +43,7 @@ const DesignMain = () => {
                 img3={icon3}
                 txt3="Brand Guidelines and Style Guides"
                 img4={icon4}
-                txt4="Marketing Collateral Design (Brochures, Business Cards, etc.)"></DesignServices>
+                txt4="Marketing Collateral Design (Brochures, Business Cards, etc.)" />
         </section>
     )
 }

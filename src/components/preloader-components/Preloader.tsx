@@ -1,6 +1,6 @@
 import { useEffect, useRef, memo } from 'react';
 
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 
 const Preloader = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -57,8 +57,8 @@ const Preloader = () => {
     })
 
     return (
-        <div ref={containerRef} className="fixed visible top-0 left-0 h-full w-full bg-[#0f0f0f] z-[60] duration-[650ms] ease-in-out">
-            <div className="preloader-container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-36">
+        <div ref={containerRef} className="preloader-container fixed visible top-0 left-0 h-full w-full bg-[#0f0f0f] z-[60] duration-[650ms] ease-in-out">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-36">
                 <img ref={imgRef} src={logo} alt="" className="preloader-img scale-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 visible duration-[400ms] ease-in-out" />
            
                 <h1 ref={textRef} className='preloader-text text-4xl pointer-events-none text-center text-white barlow-semibold absolute visible tracking-[0.1rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-[350ms] ease-in-out opacity-100'>

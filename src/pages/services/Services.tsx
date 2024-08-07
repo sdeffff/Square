@@ -15,7 +15,7 @@ const Services = () => {
             txt="
             Transform your brand with our innovative digital solutions 
             that captivate and engage your audience."
-            img={serviceBg}></SectionHeader>
+            img={serviceBg} />
 
             <Design />
             <PM />
@@ -25,7 +25,7 @@ const Services = () => {
             No matter which services you choose, we are committed to delivering 
             exceptional results that exceed your expectations. Our multidisciplinary 
             team works closely together to ensure seamless collaboration and a unified
-            vision for your digital product."></ServiceFooter>
+            vision for your digital product." />
         </section>
     )
 }   
