@@ -1,5 +1,5 @@
 .common-button {
-    transition: .35s ease;
+    transition: .25s ease;
     position: relative;
 }
 
@@ -16,7 +16,7 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: .35s ease;
+    transition: .25s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -54,7 +54,7 @@
 }
 
 .common-button p {
-    transition: .35s ease;
+    transition: .25s ease;
 
     cursor: var(--cursorPointer);
 }

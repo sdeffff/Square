@@ -32,7 +32,7 @@ function App() {
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
             <Route path='/Square/' element={<Home />} />
-            <Route path='/Square/services' element={<Suspense fallback="..."><Services /></Suspense>} />
+            <Route path='/Square/services' element={<Suspense><Services /></Suspense>} />
             <Route path='/Square/works' element={<Suspense fallback="..."><Work /></Suspense>} />
             <Route path='/Square/process' element={<Process />} />
             <Route path='/Square/about' element={<Suspense fallback="..."><About /></Suspense>} />
