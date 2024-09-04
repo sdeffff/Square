@@ -4,7 +4,7 @@ import "./thanks.css"
 const ThanksMain = () => {
     const formRef = useRef<HTMLFormElement>(null);
 
-    const handleSubmit = (e:any) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
     }
 
@@ -16,11 +16,11 @@ const ThanksMain = () => {
                         <h2 className="text-lg tb:text-xl">Full Name</h2>
 
                         <input 
-                        className="input-name barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
-                        type="text" 
-                        placeholder="Type Here"
-                        min={3}
-                        max={20}
+                            className="input-name barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
+                            type="text" 
+                            placeholder="Type Here"
+                            minLength={3}
+                            maxLength={20}
                         />
                     </li>
 
@@ -28,9 +28,9 @@ const ThanksMain = () => {
                         <h2 className="text-lg tb:text-xl">Email</h2>
 
                         <input 
-                        className="input-email barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
-                        type="email"
-                        placeholder="Type Here"
+                            className="input-email barlow-regular bg-transparent border-b-2 border-grey15 pt-1 pb-2 outline-none text-lg duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60"
+                            type="email"
+                            placeholder="Type Here"
                         />
                     </li>
                 </ul>
@@ -41,33 +41,33 @@ const ThanksMain = () => {
                     <ul className="barlow-light grid grid-cols-2 gap-y-4">
                         <li>
                             <input
-                            id="web"
-                            className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
-                            type="checkbox" />
+                                id="web"
+                                className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
+                                type="checkbox" />
                             <label htmlFor="web" className="text-[1.1rem] tb:text-lg xl:text-xl cursor-[var(--cursorPointer)]">Web Design</label>
                         </li>
                         
                         <li>
                             <input 
-                            id="col"
-                            className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
-                            type="checkbox" />
+                                id="col"
+                                className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
+                                type="checkbox" />
                             <label htmlFor="col" className="text-[1.1rem] tb:text-lg xl:text-xl cursor-[var(--cursorPointer)]">Collaboration</label>
                         </li>
                         
                         <li>
                             <input 
-                            id="mob"
-                            className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
-                            type="checkbox" />
+                                id="mob"
+                                className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
+                                type="checkbox" />
                             <label htmlFor="mob" className="text-[1.1rem] tb:text-lg xl:text-xl cursor-[var(--cursorPointer)]">Mobile App Design</label>
                         </li>
                         
                         <li>
                             <input 
-                            id="oth"
-                            className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
-                            type="checkbox" />
+                                id="oth"
+                                className="w-4 h-4 tb:w-5 tb:h-5 xl:w-6 xl:h-6 outline-none border-none accent-grey15"
+                                type="checkbox" />
                             <label htmlFor="oth" className="text-[1.1rem] tb:text-lg xl:text-xl cursor-[var(--cursorPointer)]">Others</label>
                         </li>
                     </ul>
@@ -77,17 +77,17 @@ const ThanksMain = () => {
                     <h2 className="barlow-medium text-2xl leading-normal">Your Message</h2>
 
                     <textarea
-                    className="outline-none resize-none border-none duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60 bg-[#2424245c] px-2 py-1 barlow-regular"
-                    placeholder="Type Here" input-name 
-                    cols={30} 
-                    rows={3}
+                        className="outline-none resize-none border-none duration-150 ease-in-out placeholder-grey30 focus:placeholder-grey60 bg-[#2424245c] px-2 py-1 barlow-regular"
+                        placeholder="Type Here"
+                        cols={30} 
+                        rows={3}
                     ></textarea>
                 </div>
 
                 <input 
-                className="common-button text-black text-lg barlow-medium py-4 px-9 rounded-md bg-green50 mx-auto cursor-pointer duration-[250ms] ease-in-out hover:bg-green70"
-                type="submit"
-                value={"Submit"} />
+                    className="common-button text-black text-lg barlow-medium py-4 px-9 rounded-md bg-green50 mx-auto cursor-pointer duration-[250ms] ease-in-out hover:bg-green70"
+                    type="submit"
+                    value={"Submit"} />
             </form>
         </section>
     )

@@ -32,12 +32,10 @@ const NavBar = () => {
     return (
         <>
             <header ref={headerRef} className="fixed z-40 w-full top-0 bg-[#191919] text-white flex justify-between items-center border-b-2 border-[#262626] 2xl:px-32 xl:px-20 md:px-3 sm:px-4 py-4 duration-[250ms]">
-                <Link to="/Square/" onClick={handleWindow}>
-                    <a href="#" className="flex items-center justify-center gap-3 text-[1.5rem] font-bold">
-                        <img src={logoImg} alt="" loading="lazy" />
+                <Link to="/Square/" onClick={handleWindow} className="flex items-center justify-center gap-3 text-[1.5rem] font-bold">
+                    <img src={logoImg} alt="" loading="lazy" />
 
-                        <h1 className="lg:block sm:hidden cursor-[var(--cursorPointer)]">Square Up</h1>
-                    </a>
+                    <h1 className="lg:block sm:hidden cursor-[var(--cursorPointer)]">Square Up</h1>
                 </Link>
 
                 <Navigation />

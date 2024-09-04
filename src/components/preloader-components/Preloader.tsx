@@ -3,12 +3,12 @@ import { useEffect, useRef, memo } from 'react';
 import logo from "../../assets/logo.svg";
 
 const Preloader = () => {
-    const containerRef = useRef<HTMLDivElement>(null);
-    const imgRef = useRef<HTMLImageElement>(null);
-    const textRef = useRef<HTMLHeadingElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null),
+          imgRef = useRef<HTMLImageElement>(null),
+          textRef = useRef<HTMLHeadingElement>(null);
 
     useEffect(() => {
-        window.onload = () => {
+        const preloaderFunc = () => {
             const container = containerRef.current;
             const img = imgRef.current;
             const text = textRef.current;
@@ -54,7 +54,13 @@ const Preloader = () => {
                 }, 1800); 
             }
         }
-    })
+
+        window.addEventListener("load", preloaderFunc);
+
+        return () => {
+            window.removeEventListener("load", preloaderFunc);
+        }
+    }, []);
 
     return (
         <div ref={containerRef} className="preloader-container fixed visible top-0 left-0 h-full w-full bg-[#0f0f0f] z-[60] duration-[650ms] ease-in-out">

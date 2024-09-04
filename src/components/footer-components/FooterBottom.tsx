@@ -1,4 +1,4 @@
-import { useState, useRef, memo } from "react";
+import { useState, useRef, memo, useEffect } from "react";
 
 import email from "../../assets/email.svg";
 import phone from "../../assets/phone.svg";
@@ -17,33 +17,29 @@ const FooterBottom = () => {
 
     const [phoneTooltip, setPhoneTooltip] = useState(false);
 
-    //Function to copy text to clipboard from the HTML tag
-    const copyToClipboard = (text: HTMLParagraphElement | null) => {
-        if(text) {
-            navigator.clipboard.writeText(text.innerText);
+    //Function to copy text to clipboard
+    const copyInner = (e:any) => {
+        if(e.target.classList[0] === "email") {
+            if(emailRef.current) {
+               navigator.clipboard.writeText(emailRef.current.innerText); 
+            }
+            
+            if(emailTP.current) {
+                emailTP.current.innerText = "Copied";
+            }
+        } else if(e.target.classList[0] === "phone") {
+            if(phoneRef.current) {
+                navigator.clipboard.writeText(phoneRef.current.innerText); 
+             }
+             
+             if(phoneTP.current) {
+                phoneTP.current.innerText = "Copied";
+             }
         }
     }
 
-    //Functions for every paragraph and changing innerText of span:
-    const copyEmail = () => {
-        if(emailTP.current) {
-            emailTP.current.innerText = "Copied!";
-        }
-        
-        copyToClipboard(emailRef.current);
-    }
 
-    const copyPhone = () => {
-        if(phoneTP.current) {
-            phoneTP.current.innerText = "Copied!";
-        }
-
-        copyToClipboard(phoneRef.current);
-    }
-    //---
-
-
-    //Functions to change innerText of span back to Copy when the mouse is not on the paragraph:
+    //Functions to change innerText of span back to Copy when the mouse is not on the <p> tag:
     const checkEmailTooltip = () => {
         if(emailTooltip) {
             setTimeout(() => {
@@ -70,14 +66,14 @@ const FooterBottom = () => {
             <ul className="text-white flex flex-col gap-4 lg:flex-row lg:gap-6">
                 <li className="relative flex items-center gap-2">
                     <img src={email} alt="" className="w-[1.3rem] h-[1.3rem]"/> 
-                    <p ref={emailRef} onClick={copyEmail} onMouseEnter={() => setEmailTooltip(true)} onMouseLeave={checkEmailTooltip} className="email relative text-[1.05rem] text-green70 barlow-regular cursor-[var(--cursorPointer)]">hello@squareup.com</p>
+                    <p ref={emailRef} onClick={copyInner} onMouseEnter={() => setEmailTooltip(true)} onMouseLeave={checkEmailTooltip} className="email relative text-[1.05rem] text-green70 barlow-regular cursor-[var(--cursorPointer)]">hello@squareup.com</p>
                     <span ref={emailTP} className="copyEmail absolute -top-4 left-1/2 text-center w-24 h-7 rounded-lg duration-200 ease-out -translate-x-1/2 -translate-y-1/2 bg-[#101010]" >
                         Copy
                     </span>
                 </li>
                 <li className="relative flex items-center gap-2">
                     <img src={phone} alt="" className="w-[1.3rem] h-[1.3rem]" /> 
-                    <p ref={phoneRef} onClick={copyPhone} onMouseEnter={() => setPhoneTooltip(true)} onMouseLeave={checkPhoneTooltip} className="phone relative text-[1.05rem] text-green70 barlow-regular cursor-[var(--cursorPointer)]">+91 91813 23 2309</p>
+                    <p ref={phoneRef} onClick={copyInner} onMouseEnter={() => setPhoneTooltip(true)} onMouseLeave={checkPhoneTooltip} className="phone relative text-[1.05rem] text-green70 barlow-regular cursor-[var(--cursorPointer)]">+91 91813 23 2309</p>
                     <span ref={phoneTP} className="copyPhone absolute -top-4 left-1/2 text-center w-24 h-7 rounded-lg duration-200 ease-out -translate-x-1/2 -translate-y-1/2 bg-[#101010]" >
                         Copy
                     </span>
