@@ -21,7 +21,7 @@ const ServiceFooter = (props: Props) => {
     const handleScroll = () => {
         timeoutRef.current = setTimeout(() => {
             window.scrollTo(0, 4550);
-        }, 750)
+        }, 730)
     }
 
     //When the Link is clicked set window.scrollY to the Thanks section on main page
@@ -30,11 +30,11 @@ const ServiceFooter = (props: Props) => {
         <div className="relative border-x border-grey15">
             <img src={thankBg} alt="" />
 
-            <div className="flex flex-col items-center gap-2 md:gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="flex flex-col items-center gap-2 md:gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-fit">
                 <img src={thankLogo} className="w-10 h-10 sm:w-16 sm:h-16 md:w-18 md:h-18" alt="" />
 
-                <article className="text-white text-center flex flex-col w-[56rem]">
-                    <h1 className="barlow-semibold text-xl">{props.title}</h1>
+                <article className="text-white text-center flex flex-col w-full lg:w-[56rem]">
+                    <h1 className="barlow-semibold text-base sm:text-lg md:text-xl">{props.title}</h1>
 
                     <p className="barlow-light hidden lg:block">{props.txt}</p>
                 </article>

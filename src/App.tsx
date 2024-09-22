@@ -6,11 +6,11 @@ import { lazy, Suspense } from 'react';
 
 // Page components:
 import Home from './pages/Home/Home';
-const Services = lazy(() => import("./pages/Services/Services"));
-const Work = lazy(() => import("./pages/Works/Works"));
+import Services from './pages/Services/Services';
+import Works from './pages/Works/Works';
 import Process from "./pages/Process/Process";
-const About = lazy(() => import('./pages/About/About'));
-const Career = lazy(() => import('./pages/Carrer/Career'));
+import About from './pages/About/About';
+import Career from './pages/Carrer/Career';
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 // Elements:
@@ -28,17 +28,17 @@ function App() {
     <>
       <Preloader />
       <NavBar />
-      <div className='main-container bg-[#191919] mt-20 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
+      <div className='main-container bg-[#191919] mt-24 md:mt-20 2xl:px-32 xl:px-20 md:px-3' data-scroll-container>
         <AnimatePresence mode='wait'>
           <Routes location={location} key={location.pathname}>
             <Route path='/Square/' element={<Home />} />
-            <Route path='/Square/services' element={<Suspense><Services /></Suspense>} />
-            <Route path='/Square/works' element={<Suspense fallback="..."><Work /></Suspense>} />
+            <Route path='/Square/services' element={<Services />} />
+            <Route path='/Square/works' element={<Works />} />
             <Route path='/Square/process' element={<Process />} />
-            <Route path='/Square/about' element={<Suspense fallback="..."><About /></Suspense>} />
-            <Route path='/Square/career' element={<Suspense fallback="..."><Career /></Suspense>} />
+            <Route path='/Square/about' element={<About />} />
+            <Route path='/Square/career' element={<Career />} />
 
-            <Route path='/*' element={<PageNotFound />} />
+            <Route path='/*' element={<Suspense><PageNotFound /></Suspense>} />
           </Routes>
         </AnimatePresence>
       </div>
